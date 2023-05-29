@@ -14,10 +14,12 @@ func main() {
 	b := r.Intn(1000)
 
 	fmt.Printf("%v + %v = ", a, b)
+	now := time.Now()
 	fmt.Scan(&n)
 	if n == a+b {
 		fmt.Println("Correct!")
+		fmt.Printf("Time: %.2fs\n", time.Since(now).Seconds())
 	} else {
-		fmt.Println(n)
+		fmt.Println(a + b)
 	}
 }
