@@ -46,7 +46,9 @@ func mul() float64 {
 }
 
 func main() {
-	fmt.Println(add())
-	fmt.Println(sub())
-	fmt.Println(mul())
+	score := 0.0
+	score += add()
+	score += sub()
+	score += mul()
+	fmt.Printf("Score: %.2f\n", score)
 }
